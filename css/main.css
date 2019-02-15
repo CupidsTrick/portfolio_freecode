@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  background: #153243;
+  color: #F4F9E9;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  body a {
+    text-decoration: none;
+    color: #F4F9E9; }
+
+#welcome-section {
+  margin-top: 5rem;
+  height: 100vh; }
+
+main {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  flex: 1; }
+
+h1,
+h2,
+h3 {
+  text-align: center; }
+
+#navbar {
+  position: fixed;
+  background: #284B63;
+  width: 100%; }
+  #navbar .row {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem; }
+  #navbar ul {
+    list-style: none; }
+  #navbar li {
+    margin-left: 0.5rem;
+    margin-right: 0.5em; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center; }
+
+a :hover {
+  color: #8FC0A9;
+  transition: all 0.5s ease-out; }
+
+#projects {
+  max-width: 500px;
+  overflow: hidden;
+  border: 3px solid #F4F9E9;
+  border-radius: 15px;
+  margin-bottom: 10rem; }
+  #projects .project-tile {
+    text-align: center;
+    cursor: pointer; }
+    #projects .project-tile:hover {
+      color: #8FC0A9; }
+
+.border {
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #F4F9E9;
+  border-radius: 15px;
+  border-width: fit-content;
+  height: 9rem;
+  width: 16rem;
+  margin: 1rem; }
+
+.video {
+  height: 100%;
+  width: 100%; }
+
+.main-border {
+  margin: auto;
+  margin-top: 5rem;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #F4F9E9;
+  border-radius: 15px;
+  border-width: fit-content;
+  height: 20rem;
+  width: 20rem; }
+
+.main-video {
+  width: 100%;
+  height: 100%; }
+
+footer {
+  background: #284B63;
+  width: 100%; }
+  footer p {
+    margin-left: 1rem; }
+
+@media screen and (max-width: 1219px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: auto; } }
+
+@media screen and (max-width: 400px) {
+  #projects .border {
+    height: 7.5rem;
+    width: 12rem; } }
